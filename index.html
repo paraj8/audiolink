@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Audio Video Links</title>
+<style>
+body {
+font-family: Comic sans ms;
+background-color: #CDA6FE;
+}
+a{justify-content: center; align-items: center; height: 2vh;	
+width:20vh;
+display: flex;
+margin-bottom: 20px;
+text-decoration: none;
+color: #000000;
+font-size: 18px;
+padding: 10px 20px;
+border: 2px solid #000000;
+border-radius:5px;
+background-color: #ffffff;
+transition: all 0.5s ease;}
+        a:hover {
+            background-color: #000000;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body><center><br><br><br>
+<section>
+<h2 style="color:#ffffff;text-shadow: 4px 5px 8px #FE127B">This is a representation of Audio, Video and Download links in a wabpage.</h2></section><br><br><br><br>
+
+<div>
+    <a href="faster car.mp3" download>Download Audio</a>
+    <a href="#" onclick="playAudio()">Play Audio</a>
+    <a href="video.mp4">Play Video</a>
+</div>
+
+</center>
+<audio id="myAudio"><source src="Faster car.mp3" type="audio/mp3"></audio>
+<script>function playAudio()
+{
+var audio=document.getElementById("myAudio");
+audio.play();
+}
+</script>
+</body>
+</html>
+
